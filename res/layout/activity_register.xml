@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20sp"
+    android:background="@drawable/bg"
+    tools:context=".test">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100sp"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailLoginInput"
+        android:layout_below="@+id/title"
+        android:drawableLeft="@drawable/ic_baseline_mail_24"
+        android:drawablePadding="20sp"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:hint="Email"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="@drawable/cadre"
+        android:layout_marginTop="60dp"/>
+
+    <EditText
+        android:id="@+id/passwordLoginInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailLoginInput"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cadre"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="20sp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+    <EditText
+        android:id="@+id/conformepasswordLoginInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordLoginInput"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cadre"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="20sp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/conformepasswordLoginInput"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/cadre"
+        android:backgroundTint="#00FFFFFF"
+        android:text="create account" />
+
+    <ProgressBar
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/progress"
+        android:layout_below="@id/register_btn"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/to_create_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Already have an account?"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
